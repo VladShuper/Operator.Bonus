@@ -4,15 +4,15 @@ public class Main {
         int cashplus;
         int bonus;
         balans = 100;
-        cashplus = 1200;
+        cashplus = 1100;
         if (cashplus > 1000) {
             bonus = 1;
         } else {
             bonus = 0;
         }
 
-        int cash = cashplus / 100 + balans + cashplus;
+        int cash = cashplus / 100 * bonus + balans + cashplus;
 
-        System.out.println (cash);
+        System.out.println("Итоговая сумма с бонусом:" + cash);
     }
 }
