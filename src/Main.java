@@ -1,16 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int bonus;
-        int balans = 100;
-        int cashplus = 500;
+        int balance = 100;
+        int cashplus = 700;
+        int sum = 0;
+        int bonus = 0;
         if (cashplus > 1000) {
-            bonus = 1;
-        } else {
-            bonus = 0;
-            int cash = (cashplus + balans);
+            sum = ((cashplus + balance) / 100 + (cashplus + balance));
+            bonus = (cashplus + balance) / 100;
         }
-        int cash = (cashplus + balans) / 100 + bonus - 1 + (cashplus + balans);
-
-        System.out.println("Итоговая сумма с бонусом:" + cash);
+        System.out.println("Ваш баланс состовляет:" + (cashplus + balance + bonus) + "руб.");
+        System.out.println("Вам начислен бонус в размере:" + bonus);
     }
 }
