@@ -5,10 +5,11 @@ public class Main {
         int sum = 0;
         int bonus = 0;
         if (cashplus > 1000) {
-            sum = ((cashplus + balance) / 100 + (cashplus + balance));
-            bonus = (cashplus + balance) / 100 - 1;
+            sum = ((balance + cashplus) / 100 + (balance + cashplus));
+            bonus = (balance + cashplus) / 100;
         }
-        System.out.println("Ваш баланс состовляет:" + (cashplus + balance + bonus ) + "руб.");
-        System.out.println("Вам начислен бонус в размере:" + bonus);
+        System.out.printf("Баланс Вашего счёта " + (balance + cashplus + bonus) + " руб.");
+        System.out.println("");
+        System.out.printf("Ваш бонус " + bonus + " руб.");
     }
 }
